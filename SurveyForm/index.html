@@ -10,34 +10,44 @@
     <h1 id="title">BookShopping Form</h1>
     <p id="description">Pay your books on BookShopping without taking a single step online </p>
     <form id="survey-form">
-        <label id="name-label">
-            Name:
-            <input type="text" id="name" placeholder="Enter your name" required>
-        </label>
-        <label id="email-label">
-            Email:
-            <input type="email"  id="email" placeholder="Enter your email" required>
-        </label>
-        <label id="number-label">
-            Age:
-            <input type="number" id="number" placeholder="your age" min="13" max="120">
-        </label>
-        <label for="dropdown">
-            our best book for you:
-            <select id="dropdown" name="dropdown">
-                <option value="">Select one</option>
-                <option value="1">Start With Why</option>
-                <option value="2">Coumpund Effect</option>
-                <option value="3">The magic of thinking Big</option>
-                <option value="4">Tiny Habits</option>
-            </select>
-        </label>
-        <label for="one-book">
-            One Book <input type="radio" name="book" value="one-book" checked>
-        </label>
-        <label for="several-book">
-            Several  Book <input type="radio" name="book" value="several-book">
-        </label>
+        <fieldset>
+            <label id="name-label">
+                Name:
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </label>
+            <label id="email-label">
+                Email:
+                <input type="email"  id="email" placeholder="Enter your email" required>
+            </label>
+            <label id="number-label">
+                Age:
+                <input type="number" id="number" placeholder="your age" min="13" max="120">
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="one-book">
+                One Book <input type="radio" name="book" value="one-book" checked>
+            </label>
+            <label for="several-book">
+                Several  Book <input type="radio" name="book" value="several-book">
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="dropdown">
+                our best book for you:
+                <select id="dropdown" name="dropdown">
+                    <option value="">Select one</option>
+                    <option value="1">Start With Why</option>
+                    <option value="2">Coumpund Effect</option>
+                    <option value="3">The magic of thinking Big</option>
+                    <option value="4">Tiny Habits</option>
+                </select>
+            </label>
+            <label for="bio">
+                Provide Bio
+                <textarea cols="30" name="bio" id="bio" rows="4" placeholder="Let us a comments..."></textarea>
+            </label>
+        </fieldset>
        <label for="terms-and-conditions">
             I accepted Terms and conditions 
             <input type="checkbox" name="terms-and-conditions" value="terms-and-conditions" required>
@@ -46,10 +56,6 @@
             I approved Terms and conditions 
             <input type="checkbox" name="approved-term-conditions" value="approved-terms-conditions" required>
         </label>  
-        <label for="bio">
-            Provide Bio
-            <textarea cols="30" name="bio" id="bio" rows="4" placeholder="Let us a comments..."></textarea>
-        </label>
         <input type="submit" id="submit" value="Submit">
     </form>
 </body>
