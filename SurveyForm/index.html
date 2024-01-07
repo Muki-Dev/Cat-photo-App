@@ -10,21 +10,21 @@
     <h1 id="title">BookShopping Form</h1>
     <p id="description">Pay your books on BookShopping without taking a single step online </p>
     <form id="survey-form">
-        <label for="name-label">
+        <label id="name-label">
             Name:
             <input type="text" id="name" placeholder="Enter your name" required>
         </label>
-        <label for="email-label">
+        <label id="email-label">
             Email:
             <input type="email"  id="email" placeholder="Enter your email" required>
         </label>
-        <label for="number-email">
+        <label id="number-label">
             Age:
             <input type="number" id="number" placeholder="your age" min="13" max="120">
         </label>
         <label>
             our best book for you:
-            <select>
+            <select id="dropdown">
                 <option value="none">Select one</option>
                 <option value="1">Start With Why</option>
                 <option value="2">Coumpund Effect</option>
@@ -33,20 +33,22 @@
             </select>
         </label>
         <label>
-            One Book <input type="radio" name="book">
+            One Book <input type="radio" name="book" value="one book">
         </label>
         <label>
-            Several  Book <input type="radio" name="book">
+            Several  Book <input type="radio" name="book" value="several book">
         </label>
-        <label>
+       <label>
             I accepted Terms and conditions 
             <input type="checkbox" name="terms-conditions" value="terms-and-conditions">
-        </label>
+            I approved Terms and conditions 
+            <input type="checkbox" name="approved-conditions" value="approved-conditions">
+       </label>
         <label>
             Let us a comments...
             <textarea cols="30" rows="4"></textarea>
         </label>
-        <input type="submit" value="Submit">
+        <input type="submit" id="submit" value="Submit">
     </form>
 </body>
 </html>
