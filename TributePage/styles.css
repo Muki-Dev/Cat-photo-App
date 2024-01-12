@@ -1,11 +1,9 @@
-/* ID */
-#image{
-    max-width: 500px;
+img{
+    display: block;
+  }
+  
+  #image{
+    max-width: 100%;
     height: auto;
-}
-
-#img-div > img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    margin: 0 auto;
+  }
