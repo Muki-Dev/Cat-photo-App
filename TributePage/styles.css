@@ -3,3 +3,9 @@
     max-width: 500px;
     height: auto;
 }
+
+#img-div > img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
